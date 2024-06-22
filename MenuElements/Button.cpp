@@ -4,8 +4,7 @@
 
 #include "Button.hpp"
 
-MenuElements::Button::Button(const std::string & name) : MenuItem(name)
+MenuElements::Button::Button(const std::string & name)
+	: MenuItem(name)
 {
-
 }
-

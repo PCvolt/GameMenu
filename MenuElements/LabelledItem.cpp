@@ -6,9 +6,9 @@
 
 namespace MenuElements
 {
-LabelledItem::LabelledItem(const std::string & name,
-                           std::pair<Label, MenuItem> labelAndElement) : MenuItem(
-        name), m_labelAndElement(labelAndElement)
+LabelledItem::LabelledItem(const std::string & name, std::pair<Label, MenuItem> labelAndElement)
+	: MenuItem(name),
+	  m_labelAndElement(labelAndElement)
 {
 }
-}
+} // namespace MenuElements

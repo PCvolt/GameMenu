@@ -7,10 +7,10 @@
 namespace MenuElements
 {
 
-Select::Select(const std::string & name, const std::vector<MenuItem> & selectList) : MenuItem(name),
-                                                                                     m_selectList(
-                                                                                             selectList)
+Select::Select(const std::string & name, const std::vector<MenuItem> & selectList)
+	: MenuItem(name),
+	  m_selectList(selectList)
 {
 }
 
-}
+} // namespace MenuElements

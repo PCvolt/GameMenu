@@ -11,12 +11,12 @@ namespace MenuElements
 {
 class LabelledItem : public MenuItem
 {
-public:
-    LabelledItem(const std::string & name, std::pair<Label, MenuItem> labelAndElement);
+  public:
+	LabelledItem(const std::string & name, std::pair<Label, MenuItem> labelAndElement);
 
-private:
-    std::pair<Label, MenuItem> m_labelAndElement;
+  private:
+	std::pair<Label, MenuItem> m_labelAndElement;
 };
-}
+} // namespace MenuElements
 
-#endif //GAMEMENU_LABELLEDITEM_HPP
+#endif // GAMEMENU_LABELLEDITEM_HPP

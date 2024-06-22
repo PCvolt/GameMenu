@@ -11,20 +11,21 @@ namespace MenuElements
 {
 /**
  * A Window is the top-most unit where we group elements through a list.
- * Only one Window can be active at a time, and when multiple windows are stacked, the top-most window is the active one.
+ * Only one Window can be active at a time, and when multiple windows are
+ * stacked, the top-most window is the active one.
  */
 class Window : public MenuItem
 {
-public:
-    explicit Window(const std::string & name, const MenuItemList & elementList);
-    ~Window();
-    void assignElementList(const MenuItemList & elementList);
+  public:
+	explicit Window(const std::string & name, const MenuItemList & elementList);
+	~Window();
+	void assignElementList(const MenuItemList & elementList);
 
-private:
-    MenuItemList m_elementList;
-    bool m_isOnTop;
-    Window *m_parentWindow;
+  private:
+	MenuItemList m_elementList;
+	bool m_isOnTop;
+	Window * m_parentWindow;
 };
-}
+} // namespace MenuElements
 
-#endif //GAMEMENU_WINDOW_HPP
+#endif // GAMEMENU_WINDOW_HPP

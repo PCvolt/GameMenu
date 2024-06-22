@@ -6,27 +6,27 @@
 
 namespace
 {
-MenuElements::Window *topWindow = nullptr;
+MenuElements::Window * topWindow = nullptr;
 }
 
 namespace MenuElements
 {
-Window::Window(const std::string & name, const MenuItemList & elementList) : MenuItem(name),
-                                                                             m_elementList(
-                                                                                     elementList),
-                                                                             m_isOnTop(true)
+Window::Window(const std::string & name, const MenuItemList & elementList)
+	: MenuItem(name),
+	  m_elementList(elementList),
+	  m_isOnTop(true)
 {
-    topWindow = this;
+	topWindow = this;
 }
 
 Window::~Window()
 {
-    topWindow = m_parentWindow;
+	topWindow = m_parentWindow;
 }
 
 void Window::assignElementList(const MenuItemList & elementList)
 {
-    m_elementList = elementList;
+	m_elementList = elementList;
 }
 
-}
+} // namespace MenuElements

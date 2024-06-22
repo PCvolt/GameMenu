@@ -6,12 +6,14 @@
 
 namespace MenuElements
 {
-Label::Label(const std::string & name, const std::string & text) : MenuItem(name), m_text(text)
+Label::Label(const std::string & name, const std::string & text)
+	: MenuItem(name),
+	  m_text(text)
 {
 }
 
 void Label::setText(const std::string & text)
 {
-    m_text = text;
+	m_text = text;
 }
-}
+} // namespace MenuElements

@@ -14,14 +14,13 @@ namespace MenuElements
 
 class Select : public MenuItem
 {
-public:
-    Select(const std::string & name, const std::vector<MenuItem> & selectList);
+  public:
+	Select(const std::string & name, const std::vector<MenuItem> & selectList);
 
-private:
-    std::vector<MenuItem> m_selectList; // should be something else?
+  private:
+	std::vector<MenuItem> m_selectList; // should be something else?
 };
 
-}
+} // namespace MenuElements
 
-
-#endif //GAMEMENU_SELECT_HPP
+#endif // GAMEMENU_SELECT_HPP

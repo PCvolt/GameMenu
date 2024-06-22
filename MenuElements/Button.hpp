@@ -13,12 +13,12 @@ namespace MenuElements
 {
 class Button : public MenuItem
 {
-public:
-    explicit Button(const std::string & name);
+  public:
+	explicit Button(const std::string & name);
 
-private:
-    std::function<void()> callback;
+  private:
+	std::function<void()> callback;
 };
-}
+} // namespace MenuElements
 
-#endif //GAMEMENU_BUTTON_HPP
+#endif // GAMEMENU_BUTTON_HPP

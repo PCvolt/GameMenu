@@ -13,16 +13,15 @@ namespace MenuElements
 {
 class Label : public MenuItem
 {
-public:
-    explicit Label(const std::string & name, const std::string & text);
+  public:
+	explicit Label(const std::string & name, const std::string & text);
 
-    void setText(const std::string & text);
+	void setText(const std::string & text);
 
-private:
-    std::string m_text;
-    int m_maxDisplayedCharacters = 25;
+  private:
+	std::string m_text;
+	int m_maxDisplayedCharacters = 25;
 };
-}
+} // namespace MenuElements
 
-
-#endif //GAMEMENU_LABEL_HPP
+#endif // GAMEMENU_LABEL_HPP

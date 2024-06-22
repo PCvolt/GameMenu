@@ -12,38 +12,41 @@
 namespace MenuElements
 {
 /**
- * MenuItemList is the element contained by Window, and it regroups all the elements that we will navigate through.
+ * MenuItemList is the element contained by Window, and it regroups all the
+ * elements that we will navigate through.
  */
 class MenuItemList : public MenuItem
 {
-public:
-    enum class Orientation
-    {
-        Horizontal, Vertical
-    };
+  public:
+	enum class Orientation
+	{
+		Horizontal,
+		Vertical
+	};
 
-    enum class Direction
-    {
-        Previous, Next
-    };
+	enum class Direction
+	{
+		Previous,
+		Next
+	};
 
-    explicit MenuItemList(const std::string & name);
+	explicit MenuItemList(const std::string & name);
 
-    void appendElementToList(const MenuItem & element);
+	void appendElementToList(const MenuItem & element);
 
-    void moveCursor(const Direction direction);
+	void moveCursor(const Direction direction);
 
-    void update();
+	void update();
 
-    std::vector<MenuItem> getItemList() const;
+	std::vector<MenuItem> getItemList() const;
 
-    int getCursorIndex() const;
+	int getCursorIndex() const;
 
-private:
-    std::vector<MenuItem> m_itemList;
-    Orientation m_orientation = Orientation::Vertical;
-    int m_cursorIndex = 0;
+  private:
+	std::vector<MenuItem> m_itemList;
+	Orientation m_orientation = Orientation::Vertical;
+	int m_cursorIndex = 0;
 };
-}
+} // namespace MenuElements
 
-#endif //GAMEMENU_MENUITEMLIST_HPP
+#endif // GAMEMENU_MENUITEMLIST_HPP

@@ -4,12 +4,14 @@
 
 #ifndef GAMEMENU_SIZE_HPP
 #define GAMEMENU_SIZE_HPP
-namespace MenuElements {
-struct Size {
-    int width;
-    int height;
-    float scale = 1.0f;
-    float rotation = 0.0f;
+namespace MenuElements
+{
+struct Size
+{
+	int width;
+	int height;
+	float scale = 1.0f;
+	float rotation = 0.0f;
 };
-}
-#endif //GAMEMENU_SIZE_HPP
+} // namespace MenuElements
+#endif // GAMEMENU_SIZE_HPP
